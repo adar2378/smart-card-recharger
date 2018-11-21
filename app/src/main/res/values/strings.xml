@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">কার্ড রিচার্জার</string>
+    <string name="result_text">গোপন নাম্বার</string>
+    <string name="image_text">ছবি</string>
+    <string name="gp">গ্রামীনফোন</string>
+    <string name="bl">বাংলালিংক</string>
+    <string name="robi">রবি</string>
+</resources>
