@@ -197,12 +197,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void makeCall(String number,String codes){
-        StringBuilder sb = new StringBuilder(number);
+    private void makeCall(String num,String codes){
+        /*StringBuilder sb = new StringBuilder(number);
         sb.deleteCharAt(number.length()-1); //deleting the extra space created by the enter button of keyboard.
-        String num = sb.toString();
+        String num = sb.toString();*/
+
         String regex = "[0-9]+";   //adding regex to check if the string only contains digits
-        if ((!TextUtils.isEmpty(num))&&(num.matches(regex))&&(num.length()==totalDigit(codes))) {
+        if ((num.matches(regex))&&(num.length()==totalDigit(codes))) {
             if (checkCallPermission()) {
                 num += Uri.encode("#"); //encoding the "#" else uri doesn't parse it.
                 String dial = "tel:"+codes + num;
@@ -312,7 +313,6 @@ public class MainActivity extends AppCompatActivity {
                         TextBlock myItem = items.valueAt(i);
                         sb.append(myItem.getValue());
                         Log.v("Tag1",myItem.getValue());
-                        sb.append("\n");
                     }
                     mResultEt.setText(sb.toString());
                 }

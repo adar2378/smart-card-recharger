@@ -5,4 +5,5 @@
     <string name="gp">গ্রামীনফোন</string>
     <string name="bl">বাংলালিংক</string>
     <string name="robi">রবি</string>
+    <string name="hintText">গোপন নাম্বার প্রবেশ করুন</string>
 </resources>
